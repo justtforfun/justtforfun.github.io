@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link media="screen" href="css/main.css" rel="stylesheet" type="text/css" />
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Zombie Head - Github Game Off #ggo12</title>
+    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/keys.css" type="text/css"/>
+    <script src="http://use.edgefonts.net/acme.js"></script>
+</head>
+<body>
 
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/touch-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="img/touch-icon-72x72.png" />
-        <link rel="apple-touch-icon" href="img/touch-icon-iphone.png" />
+<div id="game">
+    <h1>Zombie Head!</h1>
+    <canvas id="gameCanvas" width="800" height="450"></canvas>
+</div>
 
-        <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
-        <script type="text/javascript" src="js/gamejs/yabble.js"></script>
-        <script type="text/javascript" src="js/gamejs/gamejs.min.js"></script>
-        <script type="text/javascript" src="js/lib/utils.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var gamejs;
-                require.setModuleRoot('./js/');
-                require.run('main');
-            });
-        </script>
-        <title>Alge's Escapade</title>
-    </head>
-    <body>
-        <div id="preload">
-            <img src="img/loading.gif" />
-            <img src="img/loading-text.png" />
-        </div>
-        <div id="gameWindow">
-            <canvas id="gjs-canvas"></canvas>
-            <div id="gameEnd"></div>
-        </div>
-    </body>
+
+<div id="instructions">
+    <div class="light-keys">
+    <span>
+        Fire:  <kbd> SPACE </kbd>
+    </span>
+    <span>
+        Left:  <kbd>a</kbd> or <kbd>&larr;</kbd>
+    </span>
+    <span>
+        Right: <kbd>d</kbd> or <kbd>&rarr;</kbd>
+    </span>
+    </div>
+</div>
+
+<div id="footer">
+    <p><a href="http://github.com/condran/game-off-2012">Zombie Head</a>, created for GitHub Game Off 2012 by <a href="http://paulcondran.com">Paul Condran</a></p>
+</div>
+
+</body>
 </html>
+<script src="cocos2d.js"></script>
